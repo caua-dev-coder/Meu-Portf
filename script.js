@@ -1,11 +1,13 @@
 const progressBar = document.querySelector(".progress");
 const previousBtn = document.querySelector(".previous-btn");
 const nextBtn = document.querySelector("#next-btn");
+const percentualProgress = document.querySelector(".percProgress")
 
 let progress = 0;
 
 function updateProgressBar() {
   progressBar.style.width = progress + "%";
+  percentualProgress.innerHTML = `% ${progress}`
 }
 
 function nextStep() {
